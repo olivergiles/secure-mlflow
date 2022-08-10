@@ -12,8 +12,6 @@ RUN apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && pip install --no-cache-dir -r requirements.txt \
-  && addgroup --gid 1000 www \
-  && adduser --uid 1000 --shell /bin/sh -G www www
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY ./entry-point.sh /app/entry-point.sh

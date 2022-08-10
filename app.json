@@ -12,19 +12,19 @@
   "env": {
     "MLFLOW_TRACKING_PASSWORD": {
       "description": "Password for mlflow web dashboard and HTTP API",
-      "value": "PASSWORD"
+      "value": "admin"
     },
     "MLFLOW_TRACKING_USERNAME": {
       "description": "Username for mlflow web dashboard and HTTP API",
-      "value": "user"
+      "value": "admin"
     },
     "GCLOUD_JSON": {
       "description": "gcloud service account json to allow mlflow to store artifacts in buckets",
-      "value": "json"
+      "value": ""
     },
     "ARTIFACT_URL": {
       "description": "gcloud bucket to store the artifacts in",
-      "value": "bucket path"
+      "value": "gs://"
     }
   },
   "addons": [

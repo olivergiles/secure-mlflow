@@ -1,6 +1,6 @@
 FROM python:3.8.13-slim-buster
 
-COPY ./ ./
+COPY ./requirements.txt ./requirements.txt
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -14,5 +14,13 @@ RUN apt-get update \
   && pip install --no-cache-dir -r requirements.txt \
   && addgroup -gid 1000 www \
   && adduser -uid 1000 -H -D -s /bin/sh -G www www
+
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY ./entry-point.sh /app/entry-point.sh
+
+COPY nginx.conf.template /app/nginx.conf.template
+COPY ./nginx.sh /app/nginx.sh
+
+COPY ./mlflow.sh /app/mlflow.sh
 
 CMD ["/bin/bash", "/app/entry-point.sh"]

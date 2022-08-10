@@ -19,8 +19,12 @@
       "value": "user"
     },
     "GCLOUD_JSON": {
-      "description": "Gcloud service account json to allow mlflow to store artifacts in buckets",
+      "description": "gcloud service account json to allow mlflow to store artifacts in buckets",
       "value": "json"
+    },
+    "ARTIFACT_URL": {
+      "description": "gcloud bucket to store the artifacts in",
+      "value": "bucket path"
     }
   },
   "addons": [

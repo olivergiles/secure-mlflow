@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update \
   && apt-get -y upgrade \
-  && apt-get -y install --no-install-recommends supervisor nginx  \
+  && apt-get -y install --no-install-recommends supervisor nginx python3-psycopg2 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && pip install --no-cache-dir -r requirements.txt \

@@ -23,6 +23,4 @@ COPY ./nginx.sh /app/nginx.sh
 
 COPY ./mlflow.sh /app/mlflow.sh
 
-EXPOSE 6000
-
 CMD ["/bin/bash", "/app/entry-point.sh"]

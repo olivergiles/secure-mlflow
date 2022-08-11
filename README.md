@@ -24,8 +24,7 @@ The password for your server.
 - MLFLOW_TRACKING_USERNAME
 The username for your server.
 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ogiles1999/secure-mlflow)
 
 ## Usage
 

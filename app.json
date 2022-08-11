@@ -12,11 +12,11 @@
   "env": {
     "MLFLOW_TRACKING_PASSWORD": {
       "description": "Password for mlflow web dashboard and HTTP API",
-      "value": "admin"
+      "value": ""
     },
     "MLFLOW_TRACKING_USERNAME": {
       "description": "Username for mlflow web dashboard and HTTP API",
-      "value": "admin"
+      "value": ""
     },
     "GCLOUD_JSON": {
       "description": "gcloud service account json to allow mlflow to store artifacts in buckets",

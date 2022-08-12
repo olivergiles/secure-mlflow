@@ -3,6 +3,8 @@ A repo to quickly deploy a mlflow server on heroku with artifact storage on GCP.
 Based and inspired off https://github.com/soundsensing/mlflow-easyauth with stripped back
 Docker image.
 
+![Alt text](/images/mlflow.png?raw=true)
+
 ## Instructions
 
 ### Create a bucket
@@ -15,8 +17,13 @@ Create a service account for mlflow to access that bucket and download the key.
 
 Now deploy to heroku! Press the button and fill in the enviroment variables.
 
+![Alt text](/images/config.png?raw=true)
+
 - ARTIFACT_URL
-The url for your gcp bucket.
+The url for your gcp bucket. Which will be used by mlflow to store the artifacts you upload!
+
+![Alt text](/images/gcloud.png?raw=true)
+
 - GCLOUD_JSON
 The json for your service account.
 - MLFLOW_TRACKING_PASSWORD

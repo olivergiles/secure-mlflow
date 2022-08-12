@@ -17,8 +17,10 @@ Create a service account for mlflow to access that bucket and download the key.
 
 https://cloud.google.com/iam/docs/service-accounts
 
+### Give service account access to the bucket
+
 In our case we want the service account to just have the permission Storage Object Admin for
-our created bucket.
+our created bucket. This stackoverflow should help you achieve that: https://stackoverflow.com/questions/65529727/how-to-give-service-account-only-access-to-one-bucket-google-cloud.
 
 ### Deploying to Heroku
 

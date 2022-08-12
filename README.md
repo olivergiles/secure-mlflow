@@ -17,6 +17,8 @@ Create a service account for mlflow to access that bucket and download the key.
 
 Now deploy to heroku! Press the button and fill in the enviroment variables.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ogiles1999/secure-mlflow)
+
 ![Alt text](/images/config.png?raw=true)
 
 - ARTIFACT_URL
@@ -30,8 +32,6 @@ The json for your service account.
 The password for your server.
 - MLFLOW_TRACKING_USERNAME
 The username for your server.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ogiles1999/secure-mlflow)
 
 ## Usage
 

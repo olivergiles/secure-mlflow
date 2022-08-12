@@ -14,11 +14,10 @@ RUN apt-get update \
   && pip install --no-cache-dir -r requirements.txt
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY ./entry-point.sh /app/entry-point.sh
 
 COPY nginx.conf.template /app/nginx.conf.template
 COPY ./nginx.sh /app/nginx.sh
 
 COPY ./mlflow.sh /app/mlflow.sh
 
-CMD ["/bin/bash", "/app/entry-point.sh"]
+CMD ["/bin/bash", "exec", "/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
